@@ -1,13 +1,13 @@
 :root {
-  --plain-font-family: "Open Sans", serif;
+  --plain-font-family: "Cormorant Garamond", serif;
   --plain-font-size: 12px;
   --plain-font-style: normal;
   --plain-font-variation-settings: "wdth" 100;
 
-  --plain-font-family: "Open Sans", serif;
-  --plain-font-size: 12px;
-  --plain-font-style: normal;
-  --plain-font-variation-settings: "wdth" 100;
+  --brand-font-family: "Nunito", serif;
+  --brand-font-size: 12px;
+  --brand-font-style: normal;
+  --brand-font-variation-settings: "wdth" 100;
 
   --on-surface-color: rgb(66, 63, 50);
   --surface-color: white;
@@ -21,6 +21,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: var(--background-color);
+  font-optical-sizing: auto;
 }
 
 body::before {
@@ -70,12 +71,14 @@ nav.main-nav {
 }
 
 .main-nav-header {
-  font-size: 40px;
+  font-size: 2rem;
   line-height: 56px;
   margin: 0;
   font-weight: 600;
-  font-style: normal;
   text-align: center;
+  font-family: var(--plain-font-family);
+  font-style: var(--plain-font-style);
+  font-variation-settings: var(--plain-font-variation-settings);
 }
 
 nav.main-nav a {
@@ -129,6 +132,10 @@ nav.main-nav a {
   text-align: center;
   line-height: 17px;
   letter-spacing: 0.378em;
+  font-family: var(--brand-font-family);
+  font-size: var(--brand-font-size);
+  font-style: var(--brand-font-style);
+  font-variation-settings: var(--brand-font-variation-settings);
 }
 
 @media (max-aspect-ratio: 1/1) {
