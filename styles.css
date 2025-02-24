@@ -133,7 +133,7 @@ nav.main-nav a {
   /* horizontal */
   main {
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
   }
 
   nav.main-nav {
