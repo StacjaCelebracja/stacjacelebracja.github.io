@@ -34,7 +34,7 @@ main {
   align-items: stretch;
   justify-content: flex-start;
   gap: 25px;
-  padding: 80px 25px;
+  padding: 25px;
   box-sizing: border-box;
   overflow: auto;
   min-width: 0;
@@ -48,10 +48,11 @@ nav.main-nav {
   align-items: stretch;
   justify-content: center;
   gap: 30px;
-  padding: 80px 25px 50px 25px;
+  padding: 50px 25px;
   flex: 1;
   height: fit-content;
   font-size: inherit;
+  border-radius: 2px;
 }
 
 .main-nav-header {
@@ -73,6 +74,7 @@ nav.main-nav a {
   text-align: center;
   text-transform: capitalize;
   text-decoration: underline;
+  border-radius: 2px;
 }
 
 .logo-box {
@@ -116,7 +118,7 @@ nav.main-nav a {
   }
 
   .logo-box .logo {
-    max-width: 250px;
+    max-width: 200px;
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -131,7 +133,11 @@ nav.main-nav a {
   /* horizontal */
   main {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+  }
+
+  nav.main-nav {
+    min-height: 0;
   }
 
   .logo-box {
@@ -147,7 +153,7 @@ nav.main-nav a {
   }
 
   .logo-box .logo {
-    max-width: 250px;
+    max-width: 20px;
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
