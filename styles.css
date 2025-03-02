@@ -60,7 +60,8 @@ nav.main-nav {
   color: var(--on-surface-color);
 }
 
-nav.main-nav a {
+nav.main-nav a,
+.coming-soon-link {
   font-size: 1.2rem;
   font-family: var(--plain-font-family);
   color: var(--on-surface-color);
@@ -69,8 +70,40 @@ nav.main-nav a {
   padding: 12px 25px;
   text-align: center;
   text-transform: capitalize;
-  text-decoration: underline;
   border-radius: 2px;
+}
+
+.nav.main-nav a {
+    text-decoration: underline;
+}
+
+.coming-soon-link  {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.coming-soon-badge {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--on-surface-color);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.coming-soon-text {
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .logo-box {
