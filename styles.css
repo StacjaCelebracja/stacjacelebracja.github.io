@@ -159,3 +159,9 @@ nav.main-nav a {
     flex: unset;
   }
 }
+
+@media only screen and (max-device-width: 1366px) {
+    body {
+        background-attachment: fixed;
+    }
+  }
