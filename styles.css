@@ -26,6 +26,7 @@ body {
   background-position-y: center;
   padding: 25px;
   box-sizing: border-box;
+  background-attachment: fixed;
 }
 
 main {
@@ -161,7 +162,6 @@ nav.main-nav a,
 .logo-box .logo img {
   width: 100%;
   height: 100%;
-  aspect-ratio:  1 / 1;
 }
 
 .logo-box .main-description {
@@ -182,10 +182,8 @@ nav.main-nav a,
   }
 
   .logo-box .logo {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    width: 200px;
+    height: 200px;
   }
 
   nav.main-nav {
@@ -217,10 +215,8 @@ nav.main-nav a,
   }
 
   .logo-box .logo {
-    max-width: 20px;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    width: 200px;
+    height: 200px;
   }
 
   nav.main-nav {
@@ -228,8 +224,3 @@ nav.main-nav a,
   }
 }
 
-@media only screen and (max-device-width: 1366px) {
-    body {
-        background-attachment: fixed;
-    }
-  }
