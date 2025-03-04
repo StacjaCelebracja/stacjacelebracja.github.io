@@ -2,6 +2,7 @@
   --plain-font-family: "Cormorant Garamond", serif;
   --brand-font-family: "Nunito", serif;
   --on-surface-color: rgb(66, 63, 50);
+  --on-surface-color-variant: rgb(66, 63, 50);
   --surface-color: white;
   --surface-container-low-color: rgb(185, 203, 194);
   --background-color: rgb(208, 222, 215);
@@ -50,6 +51,45 @@ nav.main-nav {
   font-size: inherit;
   border-radius: 2px;
 }
+
+.social-media-links-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-link {
+    text-decoration: none;
+    color: var(--on-surface-color-variant);
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-link .icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-link:hover .icon-box {
+    background-color: color(from var(--on-surface-color-variant) srgb r g b / 0.08);
+}
+
+.social-media-link:focus .icon-box,
+.social-media-link:active .icon-box {
+    background-color: color(from var(--on-surface-color-variant) srgb r g b / 0.1);
+}
+
 
 .main-nav-header {
   font-size: 1.5rem;
